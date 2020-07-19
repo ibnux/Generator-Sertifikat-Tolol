@@ -24,12 +24,12 @@ if(!file_exists($path)){
 
 
     $x = (($width-$text_width)/2);
-    $y = (($height-$text_height)/2);
+    $y = $text_height+(($height-$text_height)/2);
     //255, 29, 800, 450, 527.5, 239.5
     //echo "$text_width, $text_height, $width, $height, $x, $y";
     imagettftext($image1, $font_size, 0, $x, $y, $text_color, $font_file, $text);
 
-    imagejpeg($image1,$path,100);
+    imagejpeg($image1);//,$path,100);
     imagedestroy($image1);
 }
-readfile($path);
+//readfile($path);
