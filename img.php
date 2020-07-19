@@ -29,7 +29,7 @@ if(!file_exists($path)){
     //echo "$text_width, $text_height, $width, $height, $x, $y";
     imagettftext($image1, $font_size, 0, $x, $y, $text_color, $font_file, $text);
 
-    imagejpeg($image1);//,$path,100);
+    imagejpeg($image1,$path,100);
     imagedestroy($image1);
 }
-//readfile($path);
+readfile($path);
