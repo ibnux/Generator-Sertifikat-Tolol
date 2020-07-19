@@ -43,7 +43,7 @@ if (empty($nama)) {
                     </div>
                 </form>
                 <input type="text" class="form-control mt-4" readonly onclick="this.select()" value="https://tolol.ibnux.com/?nama=<?= urlencode($nama) ?>">
-                <img src="img.php?nama=<?= urlencode($nama) ?>" class="img-fluid rounded mt-4">
+                <a href="img.php?nama=<?= urlencode($nama) ?>&dl"><img src="img.php?nama=<?= urlencode($nama) ?>" class="img-fluid rounded mt-4"></a>
             </div>
         </div>
     </div>
